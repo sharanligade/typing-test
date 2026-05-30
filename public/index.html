@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Sharan Typing Test
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- USER HEADER -->
+    <div class="user-section">
+      <div class="profile-stats">
+
+  <div class="profile-card">
+
+    <h3>⚡ Best WPM</h3>
+
+    <span id="bestWpm">
+      0
+    </span>
+
+  </div>
+
+  <div class="profile-card">
+
+    <h3>🎯 Avg Accuracy</h3>
+
+    <span id="avgAccuracy">
+      0%
+    </span>
+
+  </div>
+
+  <div class="profile-card">
+
+    <h3>📝 Tests</h3>
+
+    <span id="testsCompleted">
+      0
+    </span>
+
+  </div>
+
+</div>
+
+      <div class="profile-block">
+
+        <img
+          id="profilePic"
+          src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+          alt="Profile"
+        >
+
+        <span id="username">
+          Guest
+        </span>
+
+      </div>
+
+      <div class="auth-buttons">
+
+        <button id="login">
+          Login
+        </button>
+
+        <button id="logout">
+          Logout
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- MAIN WORKSPACE -->
+    <div class="workspace">
+
+      <!-- STATS -->
+      <div class="stats">
+
+        <div class="card">
+
+          <h2 id="time">
+            60
+          </h2>
+
+          <p>
+            Time
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h2 id="wpm">
+            0
+          </h2>
+
+          <p>
+            WPM
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h2 id="accuracy">
+            100%
+          </h2>
+
+          <p>
+            Accuracy
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h2 id="mistakes">
+            0
+          </h2>
+
+          <p>
+            Mistakes
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- QUOTE CATEGORY -->
+      <div class="quote-controls">
+
+        <select id="quoteCategory">
+
+          <option value="all">
+            🌍 All Quotes
+          </option>
+
+          <option value="motivation">
+            💪 Motivation
+          </option>
+
+          <option value="success">
+            🚀 Success
+          </option>
+
+          <option value="life">
+            🌱 Life
+          </option>
+
+          <option value="technology">
+            💻 Technology
+          </option>
+
+        </select>
+
+      </div>
+
+      <!-- QUOTE -->
+      <div
+        id="quote"
+        class="quote"
+      ></div>
+
+      <!-- HIDDEN INPUT -->
+      <textarea
+        id="input"
+        autocomplete="off"
+        autocorrect="off"
+        spellcheck="false"
+      ></textarea>
+
+      <!-- BUTTONS -->
+      <div class="buttons">
+
+        <button id="restart">
+          Restart
+        </button>
+
+        <button id="theme">
+          Theme
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- LEADERBOARD -->
+    <div class="leaderboard">
+
+      <h2>
+        Leaderboard
+      </h2>
+
+      <div id="leaderboardList">
+
+        <!-- Firebase scores load here -->
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FIREBASE -->
+  <script
+    type="module"
+    src="firebase.js"
+  ></script>
+
+  <!-- MAIN SCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
